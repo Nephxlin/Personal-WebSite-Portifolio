@@ -1,0 +1,1 @@
+const modalOverlay = document.querySelector('.modal-overlay')

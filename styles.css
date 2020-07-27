@@ -115,6 +115,24 @@ header{
 .card img{
   height: 150px;
 }
+/*==== Card2 === */
+.card2{
+  background-color: var(--color-dsk);
+}
+
+.card__image-container2 img {
+  width: 100%;
+}
+
+.card_content2,
+.card_info2 {
+  padding: 20px;
+}
+
+
+.card2 img{
+  height: 150px;
+}
 
 /*==== MODAL === */
 .modal-overlay{
@@ -138,12 +156,19 @@ header{
 .modal .close-modal{
   color: black;
   position: absolute;
-  right: 8px;
-  top: 8px;
+  right: 5px;
+  top: 5px;
   cursor: pointer;
 }
 /*==== MODAL === */
 .modal-overlay.active{
   opacity: 1;
   visibility: visible;
+}
+
+iframe {
+  width: 100%;
+  height: 93%;
+  position: absolute;
+  top: 4%;
 }

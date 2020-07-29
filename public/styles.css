@@ -76,7 +76,32 @@ header{
   border-bottom: 1px solid var(--color-att);
 }
 
-/*== Cards ==*/
+/*==== Card2 Desing Skills === */
+.card1{
+  background-color: var(--color-dsk);
+  display: grid;
+}
+
+.card__image-container1 img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.card_content1,
+.card_info1 {
+  padding: 20px;
+}
+
+
+.card1 img{
+  height: 150px;
+}
+
+
+
+
+
+/*== Cards Dev Skills ==*/
 
 .cards{
   max-width: 800px;
@@ -87,19 +112,18 @@ header{
 
 }
 
-.card , .card2{
+.card{
   background-color: var(--color-dsk);
   display: grid;
 }
 
-.card__image-container, .card__image-container2 img {
+.card__image-container img {
   width: 100%;
   cursor: pointer;
 }
 
 .card_content,
-.card_info,.card_content2,
-.card_info2 {
+.card_info {
   padding: 20px;
 }
 
@@ -117,7 +141,27 @@ header{
   text-align: center;
 }
 
-.card, .card2 img{
+.card img{
+  height: 150px;
+}
+/*==== Card2 Desing Skills === */
+.card2{
+  background-color: var(--color-dsk);
+  display: grid;
+}
+
+.card__image-container2 img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.card_content2,
+.card_info2 {
+  padding: 20px;
+}
+
+
+.card2 img{
   height: 150px;
 }
 

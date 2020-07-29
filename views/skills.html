@@ -18,8 +18,8 @@
   <section class="cards"> 
     {%for item in devSkills %}
 
-    <div class="card" src="{{item.url}}">
-      <div class="card__image-container"> 
+    <div class="card1" id="{{item.id}}">
+      <div class="card__image-container1"> 
           <img src="{{item.img}}">
      
         {%if item.link_avalibe %}
@@ -29,7 +29,7 @@
       </div>
        
        
-        <div class="card_content">
+        <div class="card_content1">
           <p>{{item.title}}</p>
       </div>    
     </div>

@@ -13,3 +13,12 @@ document.querySelector(".close-modal").addEventListener("click", function(){
   modalOverlay.classList.remove("active")
   modalOverlay.querySelector('iframe').src=``
 })
+
+const cardElement = document.querySelectorAll('.card1')
+
+for (let card of cardElement){
+  card.addEventListener("click", function(){
+    const job = card.getAttribute("id")
+   window.location.href=`/jobs?id=${job}`
+  })
+}

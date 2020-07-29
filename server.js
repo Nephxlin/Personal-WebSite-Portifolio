@@ -19,7 +19,8 @@ server.set("view engine","html")
 
 nunjucks.configure("views",{
   express: server,
-  autoescape: false
+  autoescape: false,
+  noCache: true
 })
 
 server.get("/", function(req,res){
@@ -39,6 +40,12 @@ server.get("/", function(req,res){
   }
   
   return res.render("about", {about})
+})
+
+server.get("/jobs",function(req,res){
+  var id = req.query.id
+  
+  return res.render("job", { item : devTechSkills[id]})
 })
 
 

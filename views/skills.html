@@ -14,76 +14,51 @@
     <h1>Developer Technologies</h1>
   </div>
 
-  <section class="cards">
-    
-    <div class="card" src="">
+ 
+  <section class="cards"> 
+    {%for item in devSkills %}
+
+    <div class="card" src="{{item.url}}">
       <div class="card__image-container"> 
-        <img src="https://i.imgur.com/Bk2k8lW.png">
+          <img src="{{item.img}}">
+     
+        {%if item.link_avalibe %}
+          <div class="featured">Link</div>
+        {% endif %}
+        
       </div>
-      <div class="card_content">
-        <p>Html, CSS & Javascript - Write softwares, HTML Documents & Stylesheets</p>
+       
+       
+        <div class="card_content">
+          <p>{{item.title}}</p>
       </div>    
     </div>
-
-    <div class="card" src="">
-      <div class="card__image-container">
-        <img src="https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png">
-      </div>
-      <div class="card_content">
-        <p>ReactJS/ React Native - Front-end Web-pages & App's</p>
-      </div>
-      
-    </div>
-
-    <div class="card" src="">
-      <div class="card__image-container">
-        <img src="https://www.esyfix.com/blog/wp-content/uploads/2018/07/nodejs.jpg">
-      </div>
-      <div class="card_content">
-        <p>NodeJS - Back-end server, Api's integrations & Database config.</p>
-      </div>
-      <div class="card_info">
-      
-    </div>
-    
+ 
+    {% endfor %}
   </section>
+
 
   <div id="wrapper">
     <h1>Music Technologies</h1>
   </div>
 
   <section class="cards">
+
+    {%for item in musicSkill %}
     
-    <div class="card" src="https://www.youtube.com/embed/NI5kTa79IrM">
+    <div class="card" src="{{item.url}}">
       <div class="card__image-container"> 
-        <img src="https://i.imgur.com/ntZfRhS.png">
+          <img src="{{item.img}}">
+          {%if item.link_avalibe %}
+            <div class="featured">Link</div>
+          {% endif %}
       </div>
-      <div class="card_content">
-        <p>FL Studio & Ableton Live - Mix & Mastering, Instrumental, Beats & Sound Environment</p>
-      </div>
-      
+        <div class="card_content">
+          <p>{{item.title}}</p>
+      </div>    
     </div>
-
-    <div class="card" src="https://drive.google.com/embeddedfolderview?id=1tXzyoL9enrRRepEI920XhciOd5B1u1Tc#list" width="100%">
-      <div class="card__image-container">
-        <img src="https://i.imgur.com/gWCJuge.png">
-      </div>
-      <div class="card_content">
-        <p>Producer - Songwriter, Arrangements & Artistic Identity</p>
-      </div>
-
-      
-    </div>
-
-    <div class="card" src="https://www.youtube.com/embed/WHxOLSE0SgE">
-      <div class="card__image-container">
-        <img src="https://i.imgur.com/Cx7KbkX.png">
-      </div>
-      <div class="card_content">
-        <p>Soundesigner Serum- Original SoundWaves for Environments and Softwares</p>
-      </div>
-      
-    </div>
+ 
+    {% endfor %}
     
   </section>
 
@@ -92,36 +67,23 @@
   </div>
 
   <section class="cards">
+
     
-    <div class="card2" id="">
+    {%for item in desingSkills %}
+
+    <div class="card2" src="{{item.url}}">
       <div class="card__image-container2"> 
-        <a href="https://photos.app.goo.gl/RK2oWp4QPiQEfQ1p8" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/T17FNTH.png" alt="Illustrator Logo"></a>
+          <img src="{{item.img}}">
+          {%if item.link_avalibe %}
+          <div class="featured">Link</div>
+        {% endif %}
       </div>
-      <div class="card_content2">
-        <p>Adobe Illustrator - Logotypes, Buttons, Icons and Others.</p>
-      </div>
-      
+        <div class="card_content2">
+          <p>{{item.title}}</p>
+      </div>    
     </div>
-
-    <div class="card2" id="">
-      <div class="card__image-container">
-        <a href="https://photos.app.goo.gl/AgX1H4X85qaVUNVb7" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/fUwWdkl.png" alt="Photoshop Logo"></a>
-      </div>
-      <div class="card_content">
-        <p>Adobe Photoshop - Material Midia, Folders, Banners & Cia.</p>
-      </div>
-      
-    </div>
-
-    <div class="card2">
-      <div class="card__image-container">
-        <a href="https://photos.app.goo.gl/tsnwrsdnNr84Y7s9A" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/Emw5cyp.png" alt="Clip-Studio Logo"></a>
-      </div>
-      <div class="card_content">
-        <p>Clip-Studio Paint - Environment Painting, Concepts arts for Ambience,Char's & Objects.</p>
-      </div>
-      
-    </div>
+ 
+    {% endfor %}
     
   </section>
 

@@ -84,24 +84,29 @@ header{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+
 }
 
-.card{
+.card , .card2{
   background-color: var(--color-dsk);
+  display: grid;
 }
 
-.card__image-container img {
+.card__image-container, .card__image-container2 img {
   width: 100%;
+  cursor: pointer;
 }
 
 .card_content,
-.card_info {
+.card_info,.card_content2,
+.card_info2 {
   padding: 20px;
 }
 
 .card_info{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .card_price{
@@ -112,25 +117,7 @@ header{
   text-align: center;
 }
 
-.card img{
-  height: 150px;
-}
-/*==== Card2 === */
-.card2{
-  background-color: var(--color-dsk);
-}
-
-.card__image-container2 img {
-  width: 100%;
-}
-
-.card_content2,
-.card_info2 {
-  padding: 20px;
-}
-
-
-.card2 img{
+.card, .card2 img{
   height: 150px;
 }
 
@@ -172,3 +159,19 @@ iframe {
   position: absolute;
   top: 4%;
 }
+
+/* Link Avalibe */
+.card__image-container, .card__image-container2{
+  position: relative;
+}
+
+.featured{
+  position: absolute;
+  background: #f7d05f;
+  color: #111;
+  padding: 2px 8px;
+  right: 5px;
+  border-radius: 16px;
+  top: -6px;
+}
+
